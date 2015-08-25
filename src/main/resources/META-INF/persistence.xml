@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.0" xmlns="http://java.sun.com/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
+  <persistence-unit name="AquitaxRestfulPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.hibernate.ejb.HibernatePersistence</provider>
+    <class>com.aquitax.domain.SaeDatoevento</class>
+    <class>com.aquitax.domain.SaePropietarioconductor</class>
+    <class>com.aquitax.domain.SaeEmpresa</class>
+    <class>com.aquitax.domain.SaePropietariovehiculo</class>
+    <class>com.aquitax.domain.SaeUsuario</class>
+    <class>com.aquitax.domain.SaeHistorialvehiculo</class>
+    <class>com.aquitax.domain.SaeOperador</class>
+    <class>com.aquitax.domain.SaeVehiculo</class>
+    <class>com.aquitax.domain.SaeEvento</class>
+    <class>com.aquitax.domain.SaeTurnoconductor</class>
+    <class>com.aquitax.domain.SaeServicio</class>
+    <class>com.aquitax.domain.SaeUsuariovehiculo</class>
+    <class>com.aquitax.domain.SaeConductor</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://192.168.1.8:5432/bd_aquitax"/>
+      <property name="javax.persistence.jdbc.password" value="hastalav1sta,baby"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="hibernate.cache.provider_class" value="org.hibernate.cache.NoCacheProvider"/>
+      <property name="hibernate.hbm2ddl.auto" value="update"/>
+    </properties>
+  </persistence-unit>
+</persistence>
